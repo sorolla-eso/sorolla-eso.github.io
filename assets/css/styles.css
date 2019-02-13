@@ -1,0 +1,96 @@
+.center {
+  margin: auto;
+  width: 50%;
+}
+
+.center-text {
+  text-align: center;
+}
+
+
+/**********************************/
+
+
+.main {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  padding-top: 1.5em;
+  padding-bottom: 1.5em;
+}
+
+#content {
+  padding: 10px;
+}
+
+.elem-red {
+  border: 3px solid #D64078;
+}
+
+.main > .label,
+#sidebar >.label {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: #D64078;
+}
+
+#content .label {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: #6AC5AC;
+}
+
+.main > .endlabel {
+  background-color: #D64078;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+
+#content > .endlabel {
+  background-color: #6AC5AC;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+
+.elem {
+  border: 1px solid #6AC5AC;
+  position: relative;
+}
+
+#content > article > span {
+  background-color: #6AC5AC;
+}
+
+#content > article > .endlabel {
+  position: absolute;
+  background-color: #6AC5AC;
+  right: 0;
+  bottom: 0;
+}
+
+header > .label,
+header > .label {
+  position: absolute;
+  background-color: #6AC5AC;
+  top:0;
+  left:0;
+}
+
+header > span {
+  background-color: #6AC5AC;
+}
+
+header > .endlabel {
+  position: absolute;
+  background-color: #6AC5AC;
+  right: 0;
+  bottom: 0;
+}
+
+article {
+  margin: 1em;
+}

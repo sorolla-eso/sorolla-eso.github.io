@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Galería de imágenes</title>
+  <style>
+    div {
+      font-family: monospace;
+    }
+
+    div.responsive-galery {
+      width: 80%;
+      border: 1px solid black;
+      padding: 10px;
+      box-shadow: 4px 4px 4px grey;
+      position: relative;
+      /* margin: auto; */
+    }
+
+    div.responsive-galery span {
+      position: absolute;
+      top: -1px;
+      font-size: 0.7em;
+
+    }
+
+    img {
+      padding: 0;
+      display: inline-block;
+      max-width: 98%;
+      height: auto;
+      width: 20%;
+      margin: 0;
+      box-shadow: 2px 2px 4px grey;
+    }
+
+    a:hover {
+      opacity: 0.7;
+      filter: sepia(100%);
+    }
+  </style>
+</head>
+
+<body>
+  <h1>Práctica 9. Galería de imágenes clickable</h1>
+  <span> 80%</span>
+  <div class="responsive-galery">
+    <span>20%</span>
+    <a href="#"><img src="http://placeimg.com/300/300/nature/1" alt="" ></a>
+    <a href="#"><img src="http://placeimg.com/300/300/nature/2" alt="" ></a>
+    <a href="#"><img src="http://placeimg.com/300/300/nature/3" alt="" ></a>
+    <a href="#"><img src="http://placeimg.com/300/300/nature/4" alt="" ></a>
+    <a href="#"><img src="http://placeimg.com/300/300/nature/5" alt="" ></a>
+    <a href="#"><img src="http://placeimg.com/300/300/nature/6" alt="" ></a>
+    <a href="#"><img src="http://placeimg.com/300/300/nature/7" alt="" ></a>
+    <a href="#"><img src="http://placeimg.com/300/300/nature/8" alt="" ></a>
+    <a href="#"><img src="http://placeimg.com/300/300/nature/9" alt="" ></a>
+    <a href="#"><img src="http://placeimg.com/300/300/nature/10" alt="" ></a>
+    <a href="#"><img src="http://placeimg.com/300/300/nature/11" alt="" ></a>
+    <a href="#"><img src="http://placeimg.com/300/300/nature/12" alt="" ></a>
+  </div>
+</body>
+
+</html>

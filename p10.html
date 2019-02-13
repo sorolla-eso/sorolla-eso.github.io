@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Navigation Bar</title>
+  <style>
+    html,
+    body {
+      font-family: Verdana, sans-serif;
+      line-height: 1.5;
+    }
+
+    /* Vertical navigation bar styles */
+
+    nav.vertical ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      width: 200px;
+      background-color: #f1f1f1;
+      border: 1px solid #555;
+    }
+
+    nav.vertical li {
+      text-align: center;
+      border-bottom: 1px solid #555;
+    }
+
+    nav.vertical li:last-child {
+      border-bottom: none;
+    }
+
+    nav.vertical li a {
+      display: block;
+      color: #000;
+      padding: 8px 16px;
+      text-decoration: none;
+    }
+
+
+    nav.vertical li a:hover {
+      background-color: #555;
+      color: white;
+    }
+
+    nav.vertical .active {
+      background-color: #4CAF50;
+      color: white;
+    }
+
+    /* Horizontal navigation bar styles */
+
+    nav.horizontal ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      overflow: hidden;
+      background-color: #333;
+    }
+
+    nav.horizontal li {
+      display: inline-block;
+      border-right: 1px solid #bbb;
+    }
+
+    nav.horizontal li a {
+      display: block;
+      color: white;
+      text-align: center;
+      padding: 14px 16px;
+      text-decoration: none;
+    }
+
+    nav.horizontal li a:hover {
+      background-color: #111;
+    }
+
+    nav.horizontal li:last-child {
+      border-right: none;
+      float: right;
+    }
+
+    nav.horizontal .active {
+      background-color: #4CAF50;
+      color: white;
+    }
+
+    @media screen and (max-width: 600px) {
+      nav.horizontal li {
+        display: block;
+        border-right: none;
+        border-bottom: 1px solid #bbb;
+      }
+      nav.horizontal li:last-child {
+        border-bottom: none;
+        float: none;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <h1>Práctica 10. Barras de navegación</h1>
+  <h2>Barra de navegación vertical</h2>
+  <nav class="vertical">
+    <ul>
+      <li><a class="active" href="#">Home</a></li>
+      <li><a href="#">News</a></li>
+      <li><a href="#">Contact</a></li>
+      <li><a href="#">About</a></li>
+    </ul>
+  </nav>
+  <h2>Barra de navegación Horizontal</h2>
+  <nav class="horizontal">
+    <ul>
+      <li><a href="#">Home</a></li>
+      <li><a href="#">News</a></li>
+      <li><a href="#">Contact</a></li>
+      <li>
+        <a class="active" href="#">About</a></li>
+    </ul>
+  </nav>
+
+</body>
+
+</html>

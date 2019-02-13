@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Prácica 6. Chessboard</title>
+</head>
+<style>
+  table.chessboard {
+    width: 400px;
+    margin: auto;
+    border: 1px solid black;
+    border-collapse: collapse;
+    box-shadow: 4px 4px 5px grey;
+  }
+
+  table.chessboard td {
+    width: 50px;
+    height: 50px;
+  }
+
+  table.chessboard tr:nth-of-type(odd)>td:nth-child(even) {
+    background-color: purple;
+  }
+
+  table.chessboard tr:nth-of-type(odd)>td:nth-child(odd) {
+    background-color: pink;
+  }
+
+  table.chessboard tr:nth-of-type(even)>td:nth-child(even) {
+    background-color: pink;
+  }
+
+  table.chessboard tr:nth-of-type(even)>td:nth-child(odd) {
+    background-color: purple;
+  }
+</style>
+
+<body>
+  <h1>Práctica 6. Chessboard</h1>
+  <table class="chessboard">
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+  </table>
+
+
+</body>
+
+</html>
