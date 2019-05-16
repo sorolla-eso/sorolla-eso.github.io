@@ -12,7 +12,7 @@
       padding: 5px;
     }
 
-    .common div {
+    div.bloques>div {
       border: 1px solid black;
       width: 50px;
       height: 50px;
@@ -21,18 +21,17 @@
       padding: 10px;
       text-align: center;
       line-height: 50px;
-      display: inherit;
     }
 
-    .block {
+    div.block>div {
       display: block;
     }
 
-    .inline {
+    div.inline>div {
       display: inline;
     }
 
-    .inline-block {
+    div.inline-block>div {
       display: inline-block;
     }
   </style>
@@ -42,7 +41,7 @@
   <h1>Práctica 8. Block vs Inline</h1>
   <p>Los elementos de un documento HTML, según su forma de mostrarse, se pueden clasificar en <em>inline</em> o <em>block</em></p>
   <p>Los elementos de bloque(<em>block</em>) se muestran en una nueva linea y ocupan todo el ancho asignado</p>
-  <p>Los elementos <em>inline</em> NO se visualiza en una misma linea y ocupa el ancho necesario. </p>
+  <p>Los elementos <em>inline</em> se visualiza en una misma linea y ocupa el ancho necesario. </p>
   <p><strong>Ejemplos inline:</strong></p>
   <p><span class="border">&ltspan&gt</span> , <em class="border">&ltem&gt</em> , <strong class="border">&ltstrong&gt</strong> etc.. que como se ve, se muestran en la misma linea y ocupan únicamente el espacio necesario</p>
 
@@ -58,7 +57,7 @@
   <h2>Actividad</h2> Modifica la propiedad display para que el siguiente grupo de 10 elemnetos <em>div</em> se visualize según la cabecera.
 
   <p><strong>10 div - block</strong></p>
-  <div class="common block">
+  <div class="bloques block">
     <div>1</div>
     <div>2</div>
     <div>...</div>
@@ -67,7 +66,7 @@
   </div>
 
   <p><strong>10 div - inline</strong></p>
-  <div class="common inline">
+  <div class="bloques inline">
     <div>1</div>
     <div>2</div>
     <div>3</div>
@@ -81,7 +80,7 @@
   </div>
 
   <p><strong>10 div - inline-block</strong></p>
-  <div class="common inline-block">
+  <div class="bloques inline-block">
     <div>1</div>
     <div>2</div>
     <div>3</div>
